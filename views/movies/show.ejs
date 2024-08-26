@@ -1,0 +1,28 @@
+<%- include('../partials/header.ejs') %>
+
+<h1><%= movie.title %></h1>
+
+<h2>Reviews</h2>
+
+<% if (movie.reviews.length) { %>
+<ul>
+  <% movie.reviews.forEach((review) => { %>
+  <li>
+    <strong>Rating:</strong> <%= review.rating %>/5🌟<br />
+    <strong>Comment:</strong> <%= review.text %><br />
+    <strong>Reviewed by:</strong> <%= review.user.username %>
+  </li>
+
+  <form action="/movies/<%= movie._id %>?_method=DELETE" method="POST">
+    <button type="submit">❌</button>
+  </form>
+  <a href="/movies/<%= movie._id %>/edit">Edit Movie</a>
+  <% }) %>
+</ul>
+<% } else { %>
+  <p>No reviews yet. Be the first to review!</p>
+  <form action="/movies/<%= movie._id %>?_method=DELETE" method="POST">
+    <button type="submit">❌</button>
+  </form>
+  <a href="/movies/<%= movie._id %>/edit">Edit Movie</a>
+<% } %> <%- include('../partials/footer.ejs') %>

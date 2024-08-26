@@ -1,0 +1,22 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>Add a movie</h1>
+
+<form action="/movies" method="POST">
+  <label for="title">Name of movie:</label>
+  <input type="text" name="title" id="title" />
+  <label for="reviewsComment">Comments:</label>
+  <input type="text" name="reviewsComment" id="reviewsComment" />
+  <label for="rating">Rate this movie:</label>
+  <select id="rating" name="reviewsRating">
+    <option value="1">1 🌟</option>
+    <option value="2">2 🌟🌟</option>
+    <option value="3">3 🌟🌟🌟</option>
+    <option value="4">4 🌟🌟🌟🌟</option>
+    <option value="5">5 🌟🌟🌟🌟🌟</option>
+  </select>
+  <button type="submit">Add Movie</button>
+</form>
+
+
+<%- include('../partials/footer.ejs') %>

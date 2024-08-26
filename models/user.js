@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+// const Movie = require("./movie")
+
 const userSchema = new mongoose.Schema({
   username: {
     type: String,

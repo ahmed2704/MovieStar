@@ -1,0 +1,17 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>All movies</h1>
+
+<% if (movies.length) { %>
+  <ul>
+    <% movies.forEach((movie) => { %>
+      <li>
+        <a href="/movies/<%= movie._id %>"><%= movie.title %> (<%= movie.reviews.length %> reviews)</a>
+      </li>
+    <% }) %>
+</ul>
+<% } else { %>
+  <h3>You don't have any movies yet</h3>
+<% } %>
+
+<%- include('../partials/footer.ejs') %>

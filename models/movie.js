@@ -4,7 +4,7 @@ const reviewSchema = new mongoose.Schema(
   {
     text: {
       type: String,
-      require: true,
+      required: false,
     },
     rating: {
       type: Number,
@@ -27,6 +27,7 @@ const movieSchema = new mongoose.Schema({
   title: {
     type: String,
     require: true,
+    unique: true
   },
   reviews: [reviewSchema],
   user: {
