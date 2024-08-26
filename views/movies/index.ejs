@@ -3,15 +3,19 @@
 <h1>All movies</h1>
 
 <% if (movies.length) { %>
-  <ul>
-    <% movies.forEach((movie) => { %>
-      <li>
-        <a href="/movies/<%= movie._id %>"><%= movie.title %> (<%= movie.reviews.length %> reviews)</a>
-      </li>
-    <% }) %>
+<ul>
+  <% movies.forEach((movie) => { %>
+  <li>
+    <a href="/movies/<%= movie._id %>"
+      ><%= movie.title %> (<%= movie.reviews.length %> reviews)</a>
+    <% if (user._id.equals(movie.user)) { %>
+      <form action="/movies/<%= movie._id %>?_method=DELETE" method="POST">
+        <button type="submit">❌</button>
+      </form>
+    <% } %>
+  </li>
+  <% }) %>
 </ul>
 <% } else { %>
-  <h3>You don't have any movies yet</h3>
-<% } %>
-
-<%- include('../partials/footer.ejs') %>
+<h3>You don't have any movies yet</h3>
+<% } %> <%- include('../partials/footer.ejs') %>
