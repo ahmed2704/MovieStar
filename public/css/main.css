@@ -8,56 +8,126 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 8vh 1fr 4vh;
+  background-color: #0D4C6F;
 }
 
 nav, footer {
-  background-color:lightblue;
+  background-color: #e0f7fa;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2vmin;
   font-size: 2vh;
-  color: lightslategray;
+  color: #00796b;
 }
 
 nav a {
   text-decoration: none;
-  color: slategray;
-  background-color: white;
+  color: #004d40;
+  background-color: #ffffff;
   padding: 1vmin;
   border-radius: 1vmin;
-  &:hover {
-    color: gray;
-    background-color: lightslategray;
-    color: white;
-  }
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+  background-color: #004d40;
+}
+
+a {
+  text-decoration: none;
+  color: #A5D6A7;
+  font-size: 2vmin
 }
 
 nav span {
   font-size: 1.5vmin;
-  color: lightslategray;
+  color: #004d40;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5vmin;
+  padding: 2vmin;
 }
 
 form {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 2fr;
   gap: 2vmin;
+  background-color: #ffffff; 
+  padding: 2vmin;
+  border-radius: 1vmin;
+  box-shadow: 0 0 1vmin rgba(0, 0, 0, 0.2);
+} 
+
+form label {
+  font-weight: bold;
 }
 
-form * {
+form.deleteForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: none;
+  box-shadow: none;
+  background: none;
+}
+
+form input, form select {
   font-size: 2vmin;
+  padding: 1vmin;
+  border-radius: 1vmin;
+  border: 0.1vmin solid #b0bec5;
+}
+
+button {
+  background-color: #006D75;
+  color: #E5F4FF;
+  border: none;
+  padding: 1vmin 2vmin;
+  border-radius: 1vmin;
+  cursor: pointer;
+  font-size: 2vmin;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #008890;
+  color: #E5F4FF;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  border: 0.1vmin solid #e0e0e0;
   padding: 1vmin;
   border-radius: 1vmin;
 }
 
-button:hover {
-  background-color: lightslategray;
-  color: white;
+.button-container button {
+  margin-right: 1vmin;
+}
+
+button.deleteBtn {
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 1vmin 0;
+  /* border-bottom: 0.1vmin solid #b0bec5; */
+}
+
+h1, h2, h3 {
+  color: #E5F4FF;
 }

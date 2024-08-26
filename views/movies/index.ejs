@@ -6,11 +6,10 @@
 <ul>
   <% movies.forEach((movie) => { %>
   <li>
-    <a href="/movies/<%= movie._id %>"
-      ><%= movie.title %> (<%= movie.reviews.length %> reviews)</a>
+    <a href="/movies/<%= movie._id %>"><%= movie.title %> <br> (<%= movie.reviews.length %> reviews)</a>
     <% if (user._id.equals(movie.user)) { %>
-      <form action="/movies/<%= movie._id %>?_method=DELETE" method="POST">
-        <button type="submit">❌</button>
+      <form action="/movies/<%= movie._id %>?_method=DELETE" class="deleteForm" method="POST">
+        <button type="submit" class="deleteBtn">❌</button>
       </form>
     <% } %>
   </li>

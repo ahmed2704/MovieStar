@@ -38,19 +38,16 @@ app.use(addUserToReqAndLocals);
 
 const ensureLoggedIn = require('./middleware/ensureLoggedIn');
 
-// '/auth' is a "starts with" path that all paths
-// within authCtrl are appended to
-app.use('/auth', require('./controllers/auth'));
-app.use('/movies', require('./controllers/movies'));
-// If you wanted to protect ALL routes 
-// app.use('/todos', ensureLoggedIn, require('./controllers/todos'));
-
-
 // GET / (root/landing page)
 app.get('/', async (req, res) => {
   res.render('home.ejs');
 });
 
+
+
+app.use('/auth', require('./controllers/auth'));
+app.use('/movies', ensureLoggedIn, require('./controllers/movies'));
+app.use('/', ensureLoggedIn, require('./controllers/reviews'));
 
 // Set the port from environment variable or default to 3000
 const port = process.env.PORT ? process.env.PORT : "3000";

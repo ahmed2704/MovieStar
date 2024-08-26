@@ -12,17 +12,33 @@
     <strong>Comment:</strong> <%= review.text %><br />
     <strong>Reviewed by:</strong> <%= review.user.username %>
   </li>
-
-  <form action="/movies/<%= movie._id %>?_method=DELETE" method="POST">
-    <button type="submit">❌</button>
-  </form>
+  <% if (user._id.equals(review.user._id)) { %>
   <a href="/movies/<%= movie._id %>/edit">Edit Movie</a>
+  <form action="/movies/<%= review._id %>?_method=DELETE" class="deleteForm" method="POST">
+    <button type="submit" class="deleteBtn">❌</button>
+  </form>
+  <% } %>
   <% }) %>
 </ul>
 <% } else { %>
   <p>No reviews yet. Be the first to review!</p>
-  <form action="/movies/<%= movie._id %>?_method=DELETE" method="POST">
-    <button type="submit">❌</button>
-  </form>
-  <a href="/movies/<%= movie._id %>/edit">Edit Movie</a>
-<% } %> <%- include('../partials/footer.ejs') %>
+  <% } %>
+
+<h3>Add a review</h3>
+
+<form action="/movies/<%= movie._id %>/reviews" method="POST">
+  <label for="reviewsComment">Comments:</label>
+  <input type="text" name="reviewsComment" id="reviewsComment" />
+  <label for="rating">Rate this movie:</label>
+  <select id="rating" name="reviewsRating">
+    <option value="1">1 🌟</option>
+    <option value="2">2 🌟🌟</option>
+    <option value="3">3 🌟🌟🌟</option>
+    <option value="4">4 🌟🌟🌟🌟</option>
+    <option value="5">5 🌟🌟🌟🌟🌟</option>
+  </select>
+  <button type="submit">Add Review</button>
+</form>
+
+
+<%- include('../partials/footer.ejs') %>

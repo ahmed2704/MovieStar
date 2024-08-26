@@ -1,12 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const ensureLoggedIn = require('../middleware/ensureLoggedIn');
-const User = require('../models/user');
 const Movie = require('../models/movie');
 
 
 // GET /movies (index functionality/action)
-router.get('/', ensureLoggedIn, async(req, res) => {
+router.get('/', async(req, res) => {
   const movies = await Movie.find({});
   res.render('movies/index.ejs', { movies })
 })
