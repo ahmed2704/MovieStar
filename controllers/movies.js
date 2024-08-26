@@ -16,11 +16,10 @@ router.get('/new', (req, res) => {
 //GET /applications/:movieId (show functionality/action)
 router.get('/:movieId', async (req, res) => {
   try {
-    const movie = await Movie.findById(req.params.movieId).populate('user').populate('reviews.user');
+    const movie = await Movie.findById(req.params.movieId).populate(['user', 'reviews'])
     if (!movie) {
       return res.redirect('/movies');
     }
-    console.log(movie)
     res.render('movies/show.ejs', { movie });
   } catch (err) {
     console.error(err);
