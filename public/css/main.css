@@ -68,9 +68,6 @@ form label {
 }
 
 form.deleteForm{
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   background-color: none;
   box-shadow: none;
   background: none;
@@ -145,7 +142,6 @@ ul {
 
 li {
   padding: 1vmin 0;
-  /* border-bottom: 0.1vmin solid #b0bec5; */
 }
 
 h1, h2, h3 {
