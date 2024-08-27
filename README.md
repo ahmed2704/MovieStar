@@ -1,6 +1,6 @@
 # Credits:
 
-star animations from [here]:(https://uiverse.io/SelfMadeSystem/selfish-starfish-40)
+star animations from [here](https://uiverse.io/SelfMadeSystem/selfish-starfish-40)
 
 Had help from the boys in The cave and Jim, Jan, Sam
 
@@ -14,7 +14,7 @@ able to delete theirown comment
 
 ## Live Demo
 
-You can use the application [here]:(https://moviestar-624ac53691a3.herokuapp.com/)
+You can use the application [here](https://moviestar-624ac53691a3.herokuapp.com/)
 
 # Screenshot
 
