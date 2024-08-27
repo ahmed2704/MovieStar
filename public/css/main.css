@@ -68,10 +68,9 @@ form label {
 }
 
 form.deleteForm{
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+  align-items: center; */
   background-color: none;
   box-shadow: none;
   background: none;
@@ -106,7 +105,7 @@ button:hover {
   background-color: #ffffff;
   border: 0.1vmin solid #e0e0e0;
   padding: 1vmin;
-  border-radius: 1vmin;
+  border-radius: .1vmin;
 }
 
 .button-container button {
