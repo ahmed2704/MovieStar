@@ -75,6 +75,9 @@ form.deleteForm{
   box-shadow: none;
   background: none;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .edit-delete-container {
