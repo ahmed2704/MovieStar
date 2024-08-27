@@ -39,6 +39,7 @@ router.get('/:movieId/edit', async (req,res) => {
 router.post('/', async (req, res) => {
   try {
     req.body.user = req.user._id
+    console.log(req.body)
     const movie = await Movie.create(req.body);
     const review = {
       rating: req.body.reviewsRating,

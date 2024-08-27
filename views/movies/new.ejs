@@ -4,17 +4,41 @@
 
 <form action="/movies" method="POST">
   <label for="title">Name of movie:</label>
-  <input type="text" name="title" id="title" />
+  <input type="text" name="title" id="title" class="input" />
   <label for="reviewsComment">Comments:</label>
-  <input type="text" name="reviewsComment" id="reviewsComment" />
+  <input type="text" name="reviewsComment" id="reviewsComment" class="input" />
   <label for="rating">Rate this movie:</label>
-  <select id="rating" name="reviewsRating">
+  <!-- <select id="rating" name="reviewsRating">
     <option value="1">1 🌟</option>
     <option value="2">2 🌟🌟</option>
     <option value="3">3 🌟🌟🌟</option>
     <option value="4">4 🌟🌟🌟🌟</option>
     <option value="5">5 🌟🌟🌟🌟🌟</option>
-  </select>
+  </select> -->
+  
+  
+  <div class="rating">
+    <input type="radio" id="star-1" name="reviewsRating" value="5">
+    <label for="star-1" >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+    </label>
+    <input type="radio" id="star-2" name="reviewsRating" value="4">
+    <label for="star-2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+    </label>
+    <input type="radio" id="star-3" name="reviewsRating" value="3">
+    <label for="star-3">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+    </label>
+    <input type="radio" id="star-4" name="reviewsRating" value="2">
+    <label for="star-4">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+    </label>
+    <input type="radio" id="star-5" name="reviewsRating" value="1">
+    <label for="star-5">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+    </label>
+  </div>
   <button type="submit">Add Movie</button>
 </form>
 
