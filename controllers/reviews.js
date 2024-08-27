@@ -19,20 +19,10 @@ router.post('/movies/:movieId/reviews', async (req, res) => {
 
 //DELETE /movies/:movieId/reviews/:reviewId
 router.delete('/movies/:movieId/reviews/:reviewId', async (req, res) => {
-  const movie = await Movie.findById(req.params.movieId).populate('reviews')
-  console.log(movie.reviews)
-  const filtReview =  movie.reviews.filter( function (review) {
-    if(review._id !==  req.params.reviewId) {
-      console.log('Is not equal')
-      return review
-    } else {
-      console.log('is equal')
-    }
-  })
-  console.log(filtReview)
-  movie.reviews = filtReview
+  const movie = await Movie.findById(req.params.movieId);
+  movie.reviews.id(req.params.reviewId).deleteOne();
   await movie.save();
-  res.redirect(`/movies/${movie._id}`)
+  res.redirect(`/movies/${movie._id}`);
 })
 
 
