@@ -1,20 +1,20 @@
-# credits:
+# Credits:
 
-star animations from [here]:https://uiverse.io/SelfMadeSystem/selfish-starfish-40
+star animations from [here]:(https://uiverse.io/SelfMadeSystem/selfish-starfish-40)
 
 Had help from the boys in The cave and Jim, Jan, Sam
 
 # MovieStar
 
-MovieStar is a website where you can post a movie, write a comment about 
-that movie, and rate the movie out of 5 stars. User will be able to see 
-other movies and reviews written by other users and add a review and 
-stars to a already existing movie. Users will only be able to delete their
-own comment 
+MovieStar is a website where you can post a movie, write a comment 
+about that movie, and rate the movie out of 5 stars. User will be 
+able to see other movies and reviews written by other users and add
+a review and stars to a already existing movie. Users will only be
+able to delete theirown comment 
 
 ## Live Demo
 
-You can use the application [here]:https://moviestar-624ac53691a3.herokuapp.com/
+You can use the application [here]:(https://moviestar-624ac53691a3.herokuapp.com/)
 
 # Screenshot
 
@@ -25,7 +25,6 @@ You can use the application [here]:https://moviestar-624ac53691a3.herokuapp.com/
 - JavaScript
 - HTML5
 - CSS
-- CardStarter CSS Library
 - Git
 - Github
 - VS Code
@@ -43,15 +42,16 @@ You can use the application [here]:https://moviestar-624ac53691a3.herokuapp.com/
 
 # Getting Started
 
-Make a account then add a movie or check all the already existing movies
-and check the reviews or write you own review if u already seen the movie.
+Make a account then add a movie or check all the already existing
+movies and check the reviews or write you own review if u already 
+seen the movie.
 
 # Next Steps
 
 - Make it so that user cant add a movie thats already been created
 - Make it so that user can edit their own reviews
 - Make it so that user can thumbs up/down other reviews
-- Make it so that movies have the avarage ratings of all the reviews next
-to them
-- Have a movie poster of the movie/ or allow users to upload their own 
-movie posters
+- Make it so that movies have the avarage ratings of all the reviews 
+next to them
+- Have a movie poster of the movie/ or allow users to upload their 
+own movie posters
