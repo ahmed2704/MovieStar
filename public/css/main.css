@@ -74,6 +74,22 @@ form.deleteForm{
   background-color: none;
   box-shadow: none;
   background: none;
+  text-align: center;
+}
+
+.edit-delete-container {
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vmin;
+}
+
+.edit-delete-container a, .edit-delete-container form{
+  display: inline-block;
+}
+
+div.rate {
+  color: #E0FFFF;
 }
 
 form input, form select {
@@ -101,25 +117,27 @@ button:hover {
 
 .button-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff;
   border: 0.1vmin solid #e0e0e0;
   padding: 1vmin;
   border-radius: .1vmin;
 }
 
-.button-container button {
+.button-container a {
   margin-right: 1vmin;
 }
 
 button.deleteBtn {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  margin-left: 1vmin;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  text-align: center;
 }
 
 li {

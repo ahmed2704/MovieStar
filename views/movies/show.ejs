@@ -8,16 +8,19 @@
 <ul>
   <% movie.reviews.forEach((review) => { %>
   <li>
-    <!-- put in span -->
-    <strong>Rating:</strong> <%= review.rating %>/5🌟<br />
-    <strong>Comment:</strong> <%= review.text %><br />
-    <strong>Reviewed by:</strong> <%= review.user.username %>
+    <div class="rate">
+      <strong>Rating:</strong> <%= review.rating %>/5🌟<br />
+      <strong>Comment:</strong> <%= review.text %><br />
+      <strong>Reviewed by:</strong> <%= review.user.username %>
+    </div>
   </li>
   <% if (user._id.equals(review.user._id)) { %>
-  <a href="/movies/<%= movie._id %>/edit">Edit Movie</a>
-  <form action="/movies/<%= movie._id %>/reviews/<%= review._id %>?_method=DELETE" class="deleteForm" method="POST">
-    <button type="submit" class="deleteBtn">❌</button>
-  </form>
+  <div class="edit-delete-container">
+    <a href="/movies/<%= movie._id %>/edit">Edit Movie</a>
+    <form action="/movies/<%= movie._id %>/reviews/<%= review._id %>?_method=DELETE" class="deleteForm" method="POST">
+      <button type="submit" class="deleteBtn">❌</button>
+    </form>
+  </div>
   <% } %>
   <% }) %>
 </ul>
