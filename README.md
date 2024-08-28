@@ -6,11 +6,11 @@ Had help from the boys in The cave and Jim, Jan, Sam
 
 # MovieStar
 
-MovieStar is a website where you can post a movie, write a comment 
-about that movie, and rate the movie out of 5 stars. User will be 
-able to see other movies and reviews written by other users and add
-a review and stars to a already existing movie. Users will only be
-able to delete their own comment. 
+MovieStar is a website where you can post a movie, write a comment about that movie, and rate the movie out of 5 stars. User will be able to see other movies and reviews written by other users and adda review and stars to a already existing movie. Users will only be able to delete their own comment. 
+
+# Why I Made MovieStar
+
+I created MovieStar to provide a simple platform for movie lovers to share reviews, rate films, and connect with others. Existing platforms felt too complex, so I built a space where anyone can easily post about movies, read others' opinions, and find their next favorite film.
 
 # Features
 
