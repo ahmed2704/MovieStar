@@ -23,24 +23,29 @@ able to delete their own comment.
 - Users can delete only their own comments.
 
 # Technologies Used
-
-- JavaScript
-- HTML5
-- CSS
-- Git
-- Github
-- VS Code
-- Heroku
-- node.js
-- mongoose
-- MongoDB
-- express
-- bcrypt
-- dotenv
-- ejs
-- express-session
-- method-override
-- morgan
+- **Frontend**: 
+  - HTML5 
+  - CSS3
+  - JavaScript 
+  - EJS (Embedded JavaScript templates)
+- **Backend**: 
+  - Node.js 
+  - Express.js
+- **Database**: 
+  - MongoDB 
+  - Mongoose
+- **Styling**: 
+  - Flexbox 
+  - Grid Layout 
+  - Custom CSS
+- **Version Control**: 
+  - Git 
+  - GitHub
+- **Development Tools**: 
+  - Visual Studio Code
+  - Lucid Chart
+  - Canva
+  - Trello
 
 # Planning
 
@@ -58,7 +63,7 @@ Make a account then add a movie or check all the already existing
 movies and check the reviews or write you own review if u already 
 seen the movie.
 
-## Live Demo
+# Live Demo
 
 You can use the application [here](https://moviestar-624ac53691a3.herokuapp.com/)
 

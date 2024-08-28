@@ -140,6 +140,19 @@ ul {
   text-align: center;
 }
 
+.feature-list {
+  list-style-type: disc; 
+  padding-left: 2rem; 
+  color: #E5F4FF; 
+}
+
+p {
+  font-size: 2vmin; 
+  color: #E5F4FF; 
+  margin: 2vmin 0; 
+  text-align: center;
+}
+
 li {
   padding: 1vmin 0;
 }
