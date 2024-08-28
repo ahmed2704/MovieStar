@@ -17,7 +17,6 @@ router.get('/new', (req, res) => {
 router.get('/:movieId', async (req, res) => {
   try {
     const movie = await Movie.findById(req.params.movieId).populate('user').populate('reviews.user')
-    console.log(movie)
     if (!movie) {
       return res.redirect('/movies');
     }
@@ -39,7 +38,6 @@ router.get('/:movieId/edit', async (req,res) => {
 router.post('/', async (req, res) => {
   try {
     req.body.user = req.user._id
-    console.log(req.body)
     const movie = await Movie.create(req.body);
     const review = {
       rating: req.body.reviewsRating,

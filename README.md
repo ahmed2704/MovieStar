@@ -1,6 +1,6 @@
 # Credits:
 
-star animations from [here](https://uiverse.io/SelfMadeSystem/selfish-starfish-40)
+Star animations from [here](https://uiverse.io/SelfMadeSystem/selfish-starfish-40)
 
 Had help from the boys in The cave and Jim, Jan, Sam
 
@@ -10,15 +10,17 @@ MovieStar is a website where you can post a movie, write a comment
 about that movie, and rate the movie out of 5 stars. User will be 
 able to see other movies and reviews written by other users and add
 a review and stars to a already existing movie. Users will only be
-able to delete theirown comment 
+able to delete their own comment. 
 
-## Live Demo
+# Features
 
-You can use the application [here](https://moviestar-624ac53691a3.herokuapp.com/)
+- Add new movies with a title, comment, and star rating.
 
-# Screenshot
+- View a list of all movies with reviews.
 
-![Imgur](https://i.imgur.com/4jEslaK.png)
+- Add reviews to existing movies, including star ratings.
+
+- Users can delete only their own comments.
 
 # Technologies Used
 
@@ -28,7 +30,7 @@ You can use the application [here](https://moviestar-624ac53691a3.herokuapp.com/
 - Git
 - Github
 - VS Code
-- Haroku
+- Heroku
 - node.js
 - mongoose
 - MongoDB
@@ -40,11 +42,25 @@ You can use the application [here](https://moviestar-624ac53691a3.herokuapp.com/
 - method-override
 - morgan
 
+# Planning
+
+[Trello Board](https://trello.com/b/pcObJ1O8/hello-board)
+
+# Screenshot
+
+![Imgur](https://i.imgur.com/4jEslaK.png)
+
+![Imgur](https://i.imgur.com/jtNEB5N.png)
+
 # Getting Started
 
 Make a account then add a movie or check all the already existing
 movies and check the reviews or write you own review if u already 
 seen the movie.
+
+## Live Demo
+
+You can use the application [here](https://moviestar-624ac53691a3.herokuapp.com/)
 
 # Next Steps
 

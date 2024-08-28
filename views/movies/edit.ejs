@@ -4,7 +4,7 @@
 <% if (user._id.equals(movie.user)) { %>
 <form action="/movies/<%= movie._id %>?_method=PUT" method="POST">
   <label for="title">Name of movie:</label>
-  <input type="text" name="title" id="title" value="<%= movie.title %>">
+  <input  type="text" name="title" id="title" value="<%= movie.title %>" class="input"/>
 
   <button type="submit">Update Movie</button>
 </form>
