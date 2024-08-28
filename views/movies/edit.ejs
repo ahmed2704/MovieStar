@@ -1,6 +1,7 @@
 <%- include('../partials/header.ejs') %>
 
 <h1>Edit <%= movie.title %></h1>
+<!-- Checks if the current user is the owner of the movie by comparing user IDs -->
 <% if (user._id.equals(movie.user)) { %>
 <form action="/movies/<%= movie._id %>?_method=PUT" method="POST">
   <label for="title">Name of movie:</label>

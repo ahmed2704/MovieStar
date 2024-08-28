@@ -1,9 +1,11 @@
 const mongoose = require("mongoose");
 
+
+//Define the schema for a movie review
 const reviewSchema = new mongoose.Schema(
   {
     text: {
-      type: String,
+      type: String, 
       required: false,
     },
     rating: {
@@ -13,7 +15,7 @@ const reviewSchema = new mongoose.Schema(
       default: 1
     },
     user: {
-      type: mongoose.Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId, //Reference to a user in the User model
       ref: "User",
       required: true,
     },
@@ -23,13 +25,14 @@ const reviewSchema = new mongoose.Schema(
   }
 );
 
+// Define the schema for a movie
 const movieSchema = new mongoose.Schema({
   title: {
     type: String,
     require: true,
     unique: true
   },
-  reviews: [reviewSchema],
+  reviews: [reviewSchema],//An array of reviews using the defind reviewSchema
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
